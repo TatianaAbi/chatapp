@@ -9,7 +9,7 @@ try{
   //llamamos al usuario autenticado
   const loggedInUserID = req.user._id;
   //llamamos a todos los usuarios pero excluimos solo al authenticado y no llamamos contraseñas
-  const filteredUsers = await User.find({_id: {$ne:loggedInUserID}}).select("-password");
+  const filteredUsers = await User.find({ _id: {$ne:loggedInUserID} }).select("-password");
   res.status(200).json(filteredUsers)
 }catch(error){
   console.error("error in getUsersForSidebar:",error.message)

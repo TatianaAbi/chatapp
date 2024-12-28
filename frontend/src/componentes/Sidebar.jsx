@@ -36,7 +36,7 @@ function Sidebar(){
         </div>
       </div>
 
-      <div className="py-3 overflow-y-auto">
+      <div className="w-full py-3 overflow-y-scroll ">
         {filteredUsers.map((user) => (
           <button
             key={user._id}

@@ -1,6 +1,6 @@
 const AuthImagePattern = ({ title, subtitle }) => {
   return (
-    <div className="items-center justify-center hidden h-screen p-12 lg:flex bg-base-200">
+    <div className="items-center justify-center hidden h-screen p-12 lg:flex bg-base-9200">
       <div className="max-w-md text-center">
         <div className="grid grid-cols-3 gap-3 mb-8">
           {[...Array(9)].map((_, i) => (
